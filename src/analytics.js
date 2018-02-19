@@ -47,10 +47,10 @@ function getAnalytics (res) {
 
         ga.get(options, function(err, entries) {
             if(!entries || !entries[0]) {
-                res.reply(`AkitaBox currently has 0 active users`);
+                res.reply(`SomeWebSite currently has 0 active users`);
                 return;
             }
-            res.reply(`AkitaBox currently has ${entries[0].metrics[0]['rt:activeUsers']} active users`);
+            res.reply(`SomeWebSite currently has ${entries[0].metrics[0]['rt:activeUsers']} active users`);
         });
 
         });     

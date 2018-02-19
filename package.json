@@ -1,5 +1,5 @@
 {
-  "name": "hubot-hubot-analytics",
+  "name": "hubot-analytics",
   "description": "A simple function that allows hubot to interact with Google Analytics.",
   "version": "0.0.0",
   "author": "skbrown333 <skbrown333@gmail.com>",
@@ -7,12 +7,15 @@
   "keywords": "hubot, hubot-scripts, google, analytics, google-analytics",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-hubot-analytics.git"
+    "url": "git://github.com/skbrown333/hubot-analytics.git"
   },
   "bugs": {
     "url": "https://github.com/hubot-scripts/hubot-hubot-analytics/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gapitoken": "^0.1.5",
+    "googleanalytics": "^0.3.7"
+  },
   "peerDependencies": {
     "hubot": "2.x"
   },
