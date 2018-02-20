@@ -1,5 +1,5 @@
 {
-  "name": "hubot-google-analytics",
+  "name": "hubot-active-users",
   "description": "A simple function that allows hubot to interact with Google Analytics.",
   "version": "0.0.1",
   "author": "skbrown333 <skbrown333@gmail.com>",
