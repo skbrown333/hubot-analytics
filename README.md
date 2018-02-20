@@ -1,4 +1,4 @@
-# hubot-analytics
+# hubot-google-analytics
 
 A simple function that allows hubot to interact with Google Analytics.
 
@@ -12,13 +12,13 @@ You will need an environment variable called GOOGLE_SERVICE_EMAIL to store a pat
 
 In hubot project repo, run:
 
-`npm install hubot-hubot-analytics --save`
+`npm install hubot-google-analytics --save`
 
-Then add **hubot-analytics** to your `external-scripts.json`:
+Then add **hubot-google-analytics** to your `external-scripts.json`:
 
 ```json
 [
-  "hubot-analytics"
+  "hubot-google-analytics"
 ]
 ```
 
@@ -31,4 +31,4 @@ hubot>> SomeWebSite has 1 active user
 
 ## NPM Module
 
-https://www.npmjs.com/package/hubot-analytics
+https://www.npmjs.com/package/hubot-google-analytics
