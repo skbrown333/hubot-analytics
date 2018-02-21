@@ -1,7 +1,7 @@
 {
   "name": "hubot-active-users",
   "description": "A simple function that allows hubot to interact with Google Analytics.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "skbrown333 <skbrown333@gmail.com>",
   "license": "MIT",
   "keywords": "hubot, hubot-scripts, google, analytics, google-analytics",
