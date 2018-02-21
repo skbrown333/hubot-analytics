@@ -13,6 +13,7 @@ const GA = require('googleanalytics');
 
 const serviceEmail = process.env.GOOGLE_SERVICE_EMAIL;
 const keyFilePath = process.env.GOOGLE_KEY_PATH;
+const SITE_NAME = process.env.SITE_NAME;
 
 module.exports = function(robot) {
     robot.hear(/^users/, getAnalytics);
@@ -47,10 +48,10 @@ function getAnalytics (res) {
 
         ga.get(options, function(err, entries) {
             if(!entries || !entries[0]) {
-                res.reply(`SomeWebSite currently has 0 active users`);
+                res.reply(`${ SITE_NAME } currently has 0 active users`);
                 return;
             }
-            res.reply(`SomeWebSite currently has ${entries[0].metrics[0]['rt:activeUsers']} active users`);
+            res.reply(`${ SITE_NAME } currently has ${entries[0].metrics[0]['rt:activeUsers']} active users`);
         });
 
         });     
