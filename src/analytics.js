@@ -14,6 +14,7 @@ const GA = require('googleanalytics');
 const serviceEmail = process.env.GOOGLE_SERVICE_EMAIL;
 const keyFilePath = process.env.GOOGLE_KEY_PATH;
 const SITE_NAME = process.env.SITE_NAME;
+const GOOGLE_ANALYTICS_ID = process.env.GOOGLE_ANALYTICS_ID;
 
 module.exports = function(robot) {
     robot.hear(/^users/, getAnalytics);
@@ -41,7 +42,7 @@ function getAnalytics (res) {
         ];
 
         const options = {
-            'ids': 'ga:169810254',
+            'ids': `ga:${ GOOGLE_ANALYTICS_ID }`,
             'metrics': metrics.join(','),
         };
 

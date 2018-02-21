@@ -8,12 +8,13 @@ See [`src/analytics.js`](src/analytics.js) for full documentation.
 
 Follow these instructions for setting up your .pem key https://www.npmjs.com/package/gapitoken.
 
-You will need an environment variable called GOOGLE_SERVICE_EMAIL to store a path to your .pem file, one called SITE_NAME to store the name of your site, and another environment variable GOOGLE_KEY_PATH to store the path to your keyfile.pem
+You will need an environment variable called GOOGLE_SERVICE_EMAIL to store a path to your .pem file, one called SITE_NAME to store the name of your site, GOOGLE_ANALYTICS_ID to store the view id, and another environment variable GOOGLE_KEY_PATH to store the path to your keyfile.pem
 
 ```
 export GOOGLE_SERVICE_EMAIL=''
 export GOOGLE_KEY_PATH=''
 export SITE_NAME=''
+export GOOGLE_ANALYITCIS_ID=''
 ```
 
 
