@@ -23,7 +23,7 @@ const HUBOT_SITE_NAME = process.env.HUBOT_SITE_NAME;
 const HUBOT_GOOGLE_ANALYTICS_ID = process.env.HUBOT_GOOGLE_ANALYTICS_ID;
 
 module.exports = function(robot) {
-	robot.respond(/^users/, getAnalytics);
+	robot.respond(/users/, getAnalytics);
 };
 
 function getAnalytics (res) {
