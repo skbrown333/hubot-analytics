@@ -1,12 +1,18 @@
 /**
  * analytics.js
  * This is a sample function to interact with Google Analytics.
+ * 
+ * Description: 
+ *  Displays active users on a website
+ * 
+ * Commands:
+ *  hubot users
  *
  * @license MIT
  * @version 0.14
  * @author  Steffan Brown, https://github.com/skbrown333/hubot-analytics
  * @updated 2018-02-16
- */
+*/
 
 const GAPI = require('gapitoken');
 const GA = require('googleanalytics');
@@ -17,7 +23,7 @@ const SITE_NAME = process.env.SITE_NAME;
 const GOOGLE_ANALYTICS_ID = process.env.GOOGLE_ANALYTICS_ID;
 
 module.exports = function(robot) {
-    robot.hear(/^users/, getAnalytics);
+    robot.respond(/^users/, getAnalytics);
 }
 
 function getAnalytics (res) {
