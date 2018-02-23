@@ -17,10 +17,10 @@
 const GAPI = require('gapitoken');
 const GA = require('googleanalytics');
 
-const serviceEmail = process.env.GOOGLE_SERVICE_EMAIL;
-const keyFilePath = process.env.GOOGLE_KEY_PATH;
-const SITE_NAME = process.env.SITE_NAME;
-const GOOGLE_ANALYTICS_ID = process.env.GOOGLE_ANALYTICS_ID;
+const serviceEmail = process.env.HUBOT_GOOGLE_SERVICE_EMAIL;
+const keyFilePath = process.env.HUBOT_GOOGLE_KEY_PATH;
+const SITE_NAME = process.env.HUBOT_SITE_NAME;
+const GOOGLE_ANALYTICS_ID = process.env.HUBOT_GOOGLE_ANALYTICS_ID;
 
 module.exports = function(robot) {
     robot.respond(/^users/, getAnalytics);
@@ -48,17 +48,17 @@ function getAnalytics (res) {
         ];
 
         const options = {
-            'ids': `ga:${ GOOGLE_ANALYTICS_ID }`,
+            'ids': `ga:${ HUBOT_GOOGLE_ANALYTICS_ID }`,
             'metrics': metrics.join(','),
         };
 
 
         ga.get(options, function(err, entries) {
             if(!entries || !entries[0]) {
-                res.reply(`${ SITE_NAME } currently has 0 active users`);
+                res.reply(`${ HUBOT_SITE_NAME } currently has 0 active users`);
                 return;
             }
-            res.reply(`${ SITE_NAME } currently has ${entries[0].metrics[0]['rt:activeUsers']} active users`);
+            res.reply(`${ HUBOT_SITE_NAME } currently has ${entries[0].metrics[0]['rt:activeUsers']} active users`);
         });
 
         });     
