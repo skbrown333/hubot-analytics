@@ -13,6 +13,7 @@
     "url": "https://github.com/hubot-scripts/hubot-hubot-analytics/issues"
   },
   "dependencies": {
+    "eslint": "^4.18.1",
     "gapitoken": "^0.1.5",
     "googleanalytics": "^0.3.7"
   },
