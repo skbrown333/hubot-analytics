@@ -11,10 +11,10 @@ Follow these instructions for setting up your .pem key https://www.npmjs.com/pac
 You will need an environment variable called GOOGLE_SERVICE_EMAIL to store a path to your .pem file, one called SITE_NAME to store the name of your site, GOOGLE_ANALYTICS_ID to store the view id, and another environment variable GOOGLE_KEY_PATH to store the path to your keyfile.pem
 
 ```
-export GOOGLE_SERVICE_EMAIL=''
-export GOOGLE_KEY_PATH=''
-export SITE_NAME=''
-export GOOGLE_ANALYITCIS_ID=''
+export HUBOT_GOOGLE_SERVICE_EMAIL=''
+export HUBOT_GOOGLE_KEY_PATH=''
+export HUBOT_SITE_NAME=''
+export HUBOT_GOOGLE_ANALYITCIS_ID=''
 ```
 
 
@@ -33,7 +33,7 @@ Then add **hubot-active-users** to your `external-scripts.json`:
 ## Sample Interaction
 
 ```
-user1>> users
+user1>> hubot users
 hubot>> SomeWebSite has 1 active user
 ```
 
